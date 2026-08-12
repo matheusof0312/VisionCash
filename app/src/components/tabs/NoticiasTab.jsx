@@ -9,10 +9,10 @@ export default function NoticiasTab() {
   }, []);
 
   return (
-    <section style={{ padding: '64px 48px 90px', maxWidth: 1120, margin: '0 auto' }}>
-      <h2 style={{ fontSize: 34, fontWeight: 800, margin: '0 0 8px' }}>Notícias</h2>
+    <section className="page-section" style={{ padding: '64px 48px 90px', maxWidth: 1120, margin: '0 auto' }}>
+      <h2 className="section-title" style={{ fontSize: 34, fontWeight: 800, margin: '0 0 8px' }}>Notícias</h2>
       <p style={{ fontSize: 16, color: 'oklch(40% 0.01 150)', margin: '0 0 40px' }}>As principais manchetes do mercado financeiro, direto no seu feed.</p>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+      <div className="grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
         {newsItems.map((news) => (
           <div key={news.id} style={{ background: 'white', border: '1px solid oklch(92% 0.005 150)', borderRadius: 14, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
             <img src={news.img} alt={news.title} style={{ width: '100%', height: 140, objectFit: 'cover', display: 'block' }} />

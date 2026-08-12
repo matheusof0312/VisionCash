@@ -13,8 +13,8 @@ export default function ComunidadeTab() {
   };
 
   return (
-    <section style={{ padding: '64px 48px 80px', maxWidth: 760, margin: '0 auto' }}>
-      <h2 style={{ fontSize: 34, fontWeight: 800, margin: '0 0 8px' }}>Comunidade</h2>
+    <section className="page-section" style={{ padding: '64px 48px 80px', maxWidth: 760, margin: '0 auto' }}>
+      <h2 className="section-title" style={{ fontSize: 34, fontWeight: 800, margin: '0 0 8px' }}>Comunidade</h2>
       <p style={{ fontSize: 16, color: 'oklch(40% 0.01 150)', margin: '0 0 24px' }}>Chat em tempo real entre alunos e especialistas.</p>
 
       <div style={{ background: 'white', border: '1px solid oklch(92% 0.005 150)', borderRadius: 14, overflow: 'hidden', display: 'flex', flexDirection: 'column', height: 560 }}>

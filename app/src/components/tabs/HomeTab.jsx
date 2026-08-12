@@ -4,6 +4,7 @@ import { stats } from '../../data';
 export default function HomeTab({ goCourses, goCashai }) {
   return (
     <section
+      className="hero-section"
       style={{
         padding: '96px 48px 80px', maxWidth: 1120, margin: '0 auto', display: 'grid',
         gridTemplateColumns: '1.1fr 0.9fr', gap: 56, alignItems: 'center',
@@ -19,10 +20,10 @@ export default function HomeTab({ goCourses, goCashai }) {
         >
           EDUCAÇÃO FINANCEIRA PARA JOVENS
         </div>
-        <h1 style={{ fontSize: 52, lineHeight: 1.08, fontWeight: 800, margin: '0 0 20px', color: 'oklch(18% 0.01 150)' }}>
+        <h1 className="hero-title" style={{ fontSize: 52, lineHeight: 1.08, fontWeight: 800, margin: '0 0 20px', color: 'oklch(18% 0.01 150)' }}>
           Dinheiro guardado,<br />sonho realizado.
         </h1>
-        <p style={{ fontSize: 18, lineHeight: 1.6, color: 'oklch(38% 0.01 150)', maxWidth: 480, margin: '0 0 32px' }}>
+        <p className="hero-text" style={{ fontSize: 18, lineHeight: 1.6, color: 'oklch(38% 0.01 150)', maxWidth: 480, margin: '0 0 32px' }}>
           O VisionCash é um aplicativo interativo de educação financeira com cursos rápidos e uma comunidade viva,
           feito para jovens que querem aprender a administrar dinheiro e planejar o futuro.
         </p>

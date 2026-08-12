@@ -2,13 +2,13 @@ const card = { background: 'white', border: '1px solid oklch(92% 0.005 150)', bo
 
 export default function ProblemaTab() {
   return (
-    <section style={{ padding: '64px 48px 90px', maxWidth: 1120, margin: '0 auto' }}>
-      <h2 style={{ fontSize: 34, fontWeight: 800, margin: '0 0 8px' }}>O problema é maior do que parece</h2>
+    <section className="page-section" style={{ padding: '64px 48px 90px', maxWidth: 1120, margin: '0 auto' }}>
+      <h2 className="section-title" style={{ fontSize: 34, fontWeight: 800, margin: '0 0 8px' }}>O problema é maior do que parece</h2>
       <p style={{ fontSize: 16, color: 'oklch(40% 0.01 150)', margin: '0 0 40px', maxWidth: 640 }}>
         Os algoritmos das redes sociais são desenhados para estimular a compra por impulso — e a Geração Z é o alvo principal.
       </p>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20, marginBottom: 56 }}>
+      <div className="grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20, marginBottom: 56 }}>
         <div style={card}>
           <div style={{ fontSize: 44, fontWeight: 800, color: 'oklch(20% 0.02 150)', marginBottom: 8 }}>85%</div>
           <p style={{ fontSize: 14, color: 'oklch(42% 0.01 150)', lineHeight: 1.5, margin: '0 0 12px' }}>
@@ -36,7 +36,7 @@ export default function ProblemaTab() {
       <p style={{ fontSize: 15, color: 'oklch(40% 0.01 150)', textAlign: 'center', maxWidth: 520, margin: '0 auto 32px' }}>
         Cada jovem impactado transforma sua família e comunidade, criando um ciclo positivo para o Brasil.
       </p>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20, marginBottom: 40 }}>
+      <div className="grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20, marginBottom: 40 }}>
         {[
           ['91%', 'dos jovens querem uma plataforma de educação financeira'],
           ['1M+', 'jovens impactados em potencial com expansão nacional'],

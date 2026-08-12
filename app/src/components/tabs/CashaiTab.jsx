@@ -48,8 +48,8 @@ export default function CashaiTab() {
   };
 
   return (
-    <section style={{ padding: '64px 48px 90px', maxWidth: 640, margin: '0 auto' }}>
-      <h2 style={{ fontSize: 34, fontWeight: 800, margin: '0 0 8px', textAlign: 'center' }}>Converse com a CashAI antes de comprar</h2>
+    <section className="page-section" style={{ padding: '64px 48px 90px', maxWidth: 640, margin: '0 auto' }}>
+      <h2 className="section-title" style={{ fontSize: 34, fontWeight: 800, margin: '0 0 8px', textAlign: 'center' }}>Converse com a CashAI antes de comprar</h2>
       <p style={{ fontSize: 15, color: 'oklch(40% 0.01 150)', margin: '0 0 36px', textAlign: 'center' }}>
         Descreva o que você quer comprar. A CashAI faz perguntas sob medida para separar utilidade de desejo.
       </p>

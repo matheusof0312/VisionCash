@@ -33,12 +33,12 @@ export default function CursosTab() {
   }, [simInicial, simAporte, simTaxa, simAnos]);
 
   return (
-    <section style={{ padding: '64px 48px 90px', maxWidth: 1120, margin: '0 auto' }}>
-      <h2 style={{ fontSize: 34, fontWeight: 800, margin: '0 0 8px' }}>Cursos</h2>
+    <section className="page-section" style={{ padding: '64px 48px 90px', maxWidth: 1120, margin: '0 auto' }}>
+      <h2 className="section-title" style={{ fontSize: 34, fontWeight: 800, margin: '0 0 8px' }}>Cursos</h2>
       <p style={{ fontSize: 16, color: 'oklch(40% 0.01 150)', margin: '0 0 40px' }}>
         Trilhas rápidas e acessíveis para dominar o básico e avançar em educação financeira.
       </p>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24, marginBottom: 64 }}>
+      <div className="grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24, marginBottom: 64 }}>
         {courses.map((course) => (
           <div key={course.title} style={{ background: 'white', border: '1px solid oklch(92% 0.005 150)', borderRadius: 14, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
             <img src={course.img} alt={course.title} style={{ width: '100%', height: 120, objectFit: 'cover', display: 'block' }} />
@@ -56,7 +56,7 @@ export default function CursosTab() {
 
       <h3 style={{ fontSize: 22, fontWeight: 800, margin: '0 0 6px' }}>Continue de onde parou</h3>
       <p style={{ fontSize: 14, color: 'oklch(40% 0.01 150)', margin: '0 0 20px' }}>Vídeo-aulas curtas, com progresso salvo automaticamente.</p>
-      <div style={{ background: 'oklch(20% 0.03 150)', borderRadius: 16, overflow: 'hidden', display: 'grid', gridTemplateColumns: '1.4fr 1fr', marginBottom: 64 }}>
+      <div className="lms-grid" style={{ background: 'oklch(20% 0.03 150)', borderRadius: 16, overflow: 'hidden', display: 'grid', gridTemplateColumns: '1.4fr 1fr', marginBottom: 64 }}>
         <div style={{ padding: '28px 32px' }}>
           <div style={{ display: 'inline-flex', gap: 4, background: 'rgba(255,255,255,0.08)', borderRadius: 999, padding: 4, marginBottom: 22 }}>
             {Object.keys(lmsTrilhaData).map((id) => (
@@ -122,7 +122,7 @@ export default function CursosTab() {
 
       <h3 style={{ fontSize: 22, fontWeight: 800, margin: '0 0 6px' }}>Simulador de juros compostos</h3>
       <p style={{ fontSize: 14, color: 'oklch(40% 0.01 150)', margin: '0 0 20px' }}>Ajuste os campos e veja em tempo real quanto você teria guardado.</p>
-      <div style={{ background: 'white', border: '1px solid oklch(92% 0.005 150)', borderRadius: 16, padding: 32, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40 }}>
+      <div className="sim-grid" style={{ background: 'white', border: '1px solid oklch(92% 0.005 150)', borderRadius: 16, padding: 32, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40 }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 22 }}>
           <div>
             <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 13.5, fontWeight: 700, marginBottom: 8 }}>

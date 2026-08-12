@@ -36,3 +36,32 @@ input[type=range]::-moz-range-thumb {
 button { font-family: inherit; }
 
 @keyframes spin { to { transform: rotate(360deg); } }
+
+/* ---------- Responsive (mobile) ---------- */
+@media (max-width: 900px) {
+  .site-nav { padding-left: 20px !important; padding-right: 20px !important; }
+  .nav-tabs { flex-wrap: nowrap !important; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; scrollbar-width: none; }
+  .nav-tabs::-webkit-scrollbar { display: none; }
+  .nav-tabs button { flex-shrink: 0; }
+
+  .page-section, .hero-section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 32px !important;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .hero-title { font-size: 34px !important; }
+  .hero-text { font-size: 16px !important; }
+
+  .grid-3, .grid-2 { grid-template-columns: 1fr !important; }
+  .badges-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .lms-grid, .sim-grid, .rewards-grid { grid-template-columns: 1fr !important; }
+  .leaderboard-grid { gap: 10px !important; }
+
+  .section-title { font-size: 26px !important; }
+  .flow-row { justify-content: flex-start !important; }
+}
